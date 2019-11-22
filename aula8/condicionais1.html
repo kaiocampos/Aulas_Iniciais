@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condicionais 1</title>
+    <script>
+        function verificar() {
+            var numero = document.getElementById("valor").value;
+            if (numero > 10) {
+                document.getElementById("result").innerHTML = "É maior que 10";
+            }else{
+                document.getElementById("result").innerHTML = "É menor que 10";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Condicionais</h1>
+    <div id="formulario">
+        <input id="valor" type="text" size="20"/>
+        <button onclick="verificar()">Verificar</button>
+    </div>
+    <div id="result"></div>
+</body>
+</html>

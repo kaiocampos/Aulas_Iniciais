@@ -1,0 +1,23 @@
+body{
+    
+}
+.bordas{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+.larguras{
+    width: 1000px;
+}
+.meialargura{
+    width: 450px;
+}
+.floatlef{
+    float: left;
+}
+.floatright{
+    float: right;
+}
+.margintopi{
+    margin-top: 500px;
+}

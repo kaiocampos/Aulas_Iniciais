@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    
+
+    <script>
+        // Crie uma lista com 5 notas de alunos.
+        // Imprima somente as notas que forem maiores que 50 com o comando for
+        // e a verificação com o comando if
+        notas = new Array(50,70,90,30,65);
+        
+        for (contador = 0; contador < notas.length; contador++) {
+
+            if (notas[contador] > 50) {                
+                document.write("<p>" + notas[contador] + "</p>");
+            }
+        }
+
+        // Variação do For
+        for (n of notas) {
+           document.write("<p>" + n  + "</p>");
+            
+        }
+
+    </script>
+
+
+</body>
+</html>

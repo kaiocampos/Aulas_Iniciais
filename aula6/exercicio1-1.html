@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercicio 1-1</title>
+
+    <script>
+        // a função pode ser executada no momento que eu quiser
+        // como ao clicar em um botão e diversas vezes
+
+        function calcularMedia() {
+            produto = document.getElementById("produto").value;// entrada
+            valor = document.getElementById("valor").value;// entrada
+            unidade = document.getElementById("unidades").value;// entrada
+            // processamento
+            pagar = parseFloat(valor)*parseInt(unidade);
+            //saida
+            //alert (media);
+            document.getElementById("resultado").innerHTML = "O valor a pagar é: "+pagar+" Reais pelos "+unidade+"KG do "+produto;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label>Produto</label>
+        <input type="text" name="produto" id="produto" size="10"/>
+    </div>
+    <div>
+        <label>Quer pagar quanto?</label>
+        <input type="text" name="valor" id="valor" size="10"/>
+    </div>
+    <div>
+        <label>Quantas unidades?</label>
+        <input type="text" name="unidades" id="unidades" size="10"/>
+    </div>
+    <div>
+        <label></label>
+        <input type="submit" value="Calcular" onclick="calcularMedia()"/>
+    </div>
+
+    <p id="resultado"></p>
+</body>
+</html>

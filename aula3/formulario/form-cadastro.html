@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+    <form> 
+        <div class="grupo-form">
+            <label>Nome:</label>
+            <input type="text" name="nome" size="20"/>
+        </div>
+        <div class="grupo-form">
+            <label>Sexo:</label><!-- o atributo name igual no type radio permite que somente uma opcao possa ser escolhida-->
+            <input type="radio" name="sexo" value="masculino" checked>Maculino
+            <input type="radio" name="sexo" value="feminino" >Feminino
+        </div>
+        <div class="grupo-form">
+            <label>Estado:</label>
+            <select name="estado">
+                <option value="1">RJ</option>
+                <option value="2">SP</option>
+                <option value="3">MG</option>
+            </select>
+        </div>
+        <div class="grupo-form">
+            <label>Hobbies:</label>
+                <input type="checkbox" name="hobbies" value="Viajar">Viajar
+                <input type="checkbox" name="hobbies" value="Esportes">Esportes
+                <input type="checkbox" name="hobbies" value="video Game">video Game
+                <input type="checkbox" name="hobbies" value="Acampar">Acampar
+                <input type="checkbox" name="hobbies" value="Cinema">Cinema
+        </div>
+        <div class="grupo-form">
+            <label></label>
+            <input type="submit" value="Enviar"/>
+        </div>
+        
+    </form>
+</body>
+</html>

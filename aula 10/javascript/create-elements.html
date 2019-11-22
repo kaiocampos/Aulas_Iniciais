@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creat Element</title>
+    <style>
+        .bola{
+            color: blue;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <button onclick="criarElemento()">Somar e adcionar um parágrafo</button>
+    <div>Total: <span id="soma"></span></div>
+    <script>
+            function criarElemento() {
+                newP = document.createElement('p');// cria um elemento vazio, esse elemento é o parágrafo
+                newP.innerHTML = prompt("Digite um Valor");// preenche ele elemento com algo digitado através do prompt
+                document.body.appendChild(newP);// adiciona dentro do body, como um filho o elemento criado(p -  paragrafo)
+                somarVal();
+            }
+            function somarVal() {
+                lista = document.getElementsByTagName('p');
+                divSoma = document.getElementById('soma');
+                result = 0;
+    
+                for (x=0; x < lista.length; x++) {
+                result += parseFloat(lista[x].innerHTML); 
+            }
+            divSoma.innerHTML = "Soma = " + result;
+        }
+            
+    </script>
+</body>
+</html>

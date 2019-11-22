@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condicionais 1</title>
+    <script>
+        //  Crie o seguinto programa:
+            // 1.Leia o preço e a quantidade -> Entrada
+            // 2. Caso a quantidade for maior que 9 conceder desconto de 30% -> Processamento
+            // Imprima o valor do desconto e o valor total -> Saída
+
+        function verificar() {
+            var preco = document.getElementById("preco").value;
+            var quantidade = document.getElementById("quantidade").value;
+            var total = preco * quantidade;
+            
+            //var media = (nota1 + nota2) / 2;
+
+            if (quantidade > 9) {
+                var desconto = (total * 30) / 100;
+                var precoComDesconto = total - desconto;
+                document.getElementById("desconto").innerHTML = "Já que você comprou "+quantidade+" vai ter um desconto de " + desconto+ "%";
+                document.getElementById("desconto").style.backgroundColor = "silver";
+                document.getElementById("pagar").innerHTML = "E o valor total ficou em: "+ precoComDesconto + " Reais";
+                document.getElementById("pagar").style.backgroundColor = "green";                                
+            }else{
+                document.getElementById("pagar").innerHTML = "a sua conta deu " + total + " Reais";                
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <h1>Condicionais 2</h1>
+    
+    <div>
+        <label for="">Quer pagar quanto?</label>
+        <input type="number" id="preco" />
+    </div>
+    <div>
+        <label for="">Quantas unidades vai levar? </label>
+        <input type="number" id="quantidade" />
+    </div>
+    <div>
+        <button onclick="verificar()">Desconto</button>
+    </div>
+    <div id="desconto">
+
+    </div>
+    <div id="pagar">
+
+    </div>
+</body>
+</html>

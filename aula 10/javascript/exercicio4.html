@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="convidar()">Novo Convidado</button>
+    <div id="total"></div>
+    <div id="convidados" style="border: 1px solid #00f; width:500px;"></div>
+    
+    <script>
+        function convidar(){
+            lista = document.createElement("p"); // cria um elemento vazio, esse elemento é a lista
+            lista.innerHTML = prompt("Digite o nome do convidado: "); // preenche ele elemento com algo digitado através do prompt
+            document.getElementById('convidados').appendChild(lista);// adiciona dentro do body, como um filho o elemento criado(p -  paragrafo)
+            
+            newP = document.getElementsByTagName('p');
+            document.getElementById('total').innerHTML = newP.length;
+        }
+       
+    </script>
+</body>
+</html>

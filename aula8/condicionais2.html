@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condicionais 1</title>
+    <script>
+        //  Crie o seguinto programa:
+            // 1.Leia 2 notas -> Entrada
+            // Cacule a média -> Processamento
+            // Imprima Aprado se maior que 50 ou reprovado, caso contrário -> Saída
+
+
+
+        function verificar() {
+            var nota1 = parseFloat(document.getElementById("nota1").value);
+            var nota2 = parseFloat(document.getElementById("nota2").value);
+            var media = (nota1 + nota2) / 2;
+            if (media >= 50) {
+                document.getElementById("media").innerHTML = "PARABÉNS CDF! ESTÁ APROVADO";
+            }else{
+                document.getElementById("media").innerHTML = "PRECISA ESTUDAR UM POUCO MAIS, QUERIDO CDF";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Condicionais 2</h1>
+    
+    <div>
+        <label for="">NOTA 1</label>
+        <input type="text" id="nota1" />
+    </div>
+    <div>
+        <label for="">NOTA 2</label>
+        <input type="text" id="nota2" />
+    </div>
+    <div>
+        <button onclick="verificar()">Média</button>
+    </div>
+    <div id="media">
+
+    </div>
+</body>
+</html>

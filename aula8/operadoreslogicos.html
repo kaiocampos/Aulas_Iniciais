@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OPERADORES LOGICOS</title>
+    <script>
+        loginSistema = "admin";
+        senhaSistema = "1234"
+        function logar() {
+            var login = document.getElementById("login").value;
+            var senha = document.getElementById("senha").value;
+            
+            if (login == loginSistema && senha == senhaSistema){
+                alert("Login Correto");
+                window.location.href = "http://www.google.com";
+            }else{
+                alert("Login/Senha Errado")
+            }            
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <label>Login</label>
+        <input type="text" id="login"/>
+    </div>
+    <div>
+        <label>Senha:</label>
+        <input type="password" id="senha"/>
+    </div>
+    <div>
+        <button onclick="logar()">Logar</button>
+    </div>
+    <div id="login">
+
+    </div>
+    <div id="zoeira">
+
+    </div>
+</body>
+</html>

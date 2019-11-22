@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condicionais 4 IF</title>
+    <script>
+        // crie um programa que leia a nota e o percentual de 
+        // presença (de 0 a 100)
+        // Imprima "Aprovado", se a nota for igual ou maior que 60
+        // e presença maior que 75. Caso contrário, reprovado. 
+        
+        function verificar() {
+            var nota = document.getElementById("nota").value;
+            var percentual = document.getElementById("percentual").value;
+            
+            
+            if (nota >= 60 && percentual >= 75){
+                document.getElementById("result").innerHTML = "Aprovado com nota : " + nota;
+                document.getElementById("zoeira").innerHTML = "Vamos estudar um pouco mais";
+                document.getElementById("result").style.color = "green";
+            }else{
+                document.getElementById("result").innerHTML = "Reprovado com nota: " + nota;
+                document.getElementById("zoeira").innerHTML = "Vamos parar de estudar";
+                document.getElementById("result").style.color = "red";
+            }            
+        }
+    </script>
+</head>
+
+<body>
+   
+
+<div>
+        <label>Nota</label>
+        <input type="number" id="nota" />
+    </div>
+ 
+    <div>
+        <label>Percentual (0 a 100)</label>
+        <input type="number" id="percentual" />
+    </div>
+    <div>
+        <button onclick="verificar()">Verificar</button>
+    </div>
+    <div id="result"></div> 
+    <div id="zoeira"></div>
+</body>
+</html>

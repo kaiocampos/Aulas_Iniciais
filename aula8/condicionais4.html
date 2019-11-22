@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condicionais 4 IF</title>
+    <script>
+        // Elabore um programa que leia a idade e imprima um 
+        // das seguintes categorias:
+        //infantil A = 0 - 7 anos
+        //infantil B = 8-10 anos
+        //juvenil = 11-17 anos
+        //adulto = maiores de 18 anos
+        function verificar() {
+            var idade = document.getElementById("idade").value;
+
+            if (idade <= 7) {
+                document.getElementById("fxEtaria").innerHTML = "infantil A = 0 - 7 anos";
+                document.getElementById("zoeira").innerHTML = "Vai ser Criança";
+            }else if(idade <= 10){
+                document.getElementById("fxEtaria").innerHTML = "infantil B = 8 - 10 anos";
+                document.getElementById("zoeira").innerHTML = "Vai Brincar";
+            }else if(idade <= 17){
+                document.getElementById("fxEtaria").innerHTML = "juvenil = 11-13 anos";
+                document.getElementById("zoeira").innerHTML = "Vai Estudar Vagabundo";
+            }else{
+                document.getElementById("fxEtaria").innerHTML = "adulto = maiores de 18 anos";
+                document.getElementById("zoeira").innerHTML = "Vai Trabalhar Vagabundo";
+            }            
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <label>IDADE</label>
+        <input type="number" id="idade" />
+    </div>
+    <div>
+        <button onclick="verificar()">Faixa Etária</button>
+    </div>
+    <div id="fxEtaria">
+
+    </div>
+    <div id="zoeira">
+
+    </div>
+</body>
+</html>

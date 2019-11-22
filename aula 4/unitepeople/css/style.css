@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+}
+.container{
+    background-image:url(../img/sunset.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 789px;
+}
+.cabecalho{
+    height: 150px;
+}
+.logo{
+    margin-right: 150px;
+    float: left;
+}
+.menu{
+    float: left;
+}
+.login{
+    margin-right: 50px;
+    float: right;
+}
+.login a{
+    color: white;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;    
+    margin-left:40px;
+}
+.btn-login{
+    color: white;
+    font-weight: bold;
+}
+.btn-registro{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 5px;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+}
+.btn-registro:hover{
+    background-color: #444;
+}
+.info-home{
+    margin-top: 100px;
+    text-align: center;
+}
+.info-home h1{
+    font-size: 50px;
+    color: #fff;
+}
+.info-home h3{
+    font-size: 30px;
+    font-weight: 100;
+    color: #fff;
+}
+.sectors{
+    margin-top: 80px;
+    text-align: center;
+}
+.sectors h2{
+    font-size: 40px;
+}
+.sectors p{
+    font-size: 14px;
+    color: #555;
+}
+.home-icon{ 
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.home-icon div{
+    display: inline-block;
+    width: 130px;
+}
+.jobs{
+    height: 200px;
+    
+}
+footer{
+    height: 100px;
+    background-color: #eee;
+}

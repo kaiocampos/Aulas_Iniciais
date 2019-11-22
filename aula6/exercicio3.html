@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 3</title>
+    <script>
+        //crie um programa que leia o nome do vendedor
+        // o salario, descontos e valor de comissão
+        // calcule o salário líquido
+        
+        //qual os valores de entrada?
+        var vendedor = prompt("Digite o nome do Vendedor: ");
+        var salario = parseFloat(prompt("Quanto ele Recebe? "));
+        var descontos = parseFloat(prompt("Quando roubamos dele? "));
+        var comissao = parseFloat(prompt("Quanto ele recebe de comisão?"));
+        //processamento
+        var salarioLiquido = (salario + comissao) - (descontos);
+        //saída
+        document.write("O funcionario "+vendedor+" Deve receber: "+salarioLiquido+" Reais");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

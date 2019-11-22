@@ -1,0 +1,13 @@
+body{
+    width:1280px;
+    height:800px;
+}
+.row{
+    background-color: aqua;
+}
+footer{
+    text-align: center; 
+}
+a:hover{
+    color: aqua;
+}

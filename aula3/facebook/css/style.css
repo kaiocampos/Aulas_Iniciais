@@ -1,0 +1,31 @@
+.logo{
+    width: 170px;
+    float: left; 
+}
+.login{
+    float: right;
+    width:300px; 
+    margin: 25px;
+    color: white;
+}
+.grup-form{
+    float: left;
+}
+.header{
+    background-color:#3B5998;
+    height: 70px;
+}
+.lateral{
+    float: left;
+    width: 59%;
+}
+.principal{
+    float: right;
+    width: 39%;
+}
+.texto{
+    font-weight: bold;
+    font-size: 30px;
+   color: #3B5998;
+    
+}
